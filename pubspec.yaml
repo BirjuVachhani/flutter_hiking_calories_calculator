@@ -1,0 +1,10 @@
+name: hiking_calories_calculator
+description: A calculator for calculating burned calories during hiking using Pandolf Equation.
+version: 0.1.1
+homepage: https://simform.com
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  meta: ^1.1.8
