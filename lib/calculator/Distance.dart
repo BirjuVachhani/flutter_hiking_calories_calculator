@@ -24,11 +24,13 @@ class Distance implements Comparable<Distance> {
       double miles = 0,
       double yards = 0,
       double inches = 0,
+        double metres = 0,
       double ft = 0})
       : this._km(km +
             (miles / _milesFactor) +
             (yards / _yardFactor) +
             (inches / _inchFactor) +
+      (metres / 1000) +
             (ft / _feetFactor));
 
   const Distance._km(this._distance);
