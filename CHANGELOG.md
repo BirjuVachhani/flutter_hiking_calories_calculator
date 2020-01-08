@@ -1,3 +1,11 @@
+## [0.1.2] - January 06, 2020
+
+* Add support for creating `Distance` instances using `metres` unit.
+
+```dart
+    final distance = Distance(metres: 500);
+```
+
 ## [0.1.1] - January 06, 2020
 
 * Code Refactor
