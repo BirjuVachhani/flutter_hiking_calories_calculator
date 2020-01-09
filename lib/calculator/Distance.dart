@@ -1,3 +1,19 @@
+/*
+ * Copyright © 2020 Simform Solutions
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
 // Author: Birju Vachhani (https://github.com/birjuvachhani)
 // Created Date: January 03, 2020
 
@@ -19,19 +35,18 @@ class Distance implements Comparable<Distance> {
 
   static const Distance zero = Distance._km(0);
 
-  const Distance(
-      {double km = 0,
-      double miles = 0,
-      double yards = 0,
-      double inches = 0,
-        double metres = 0,
-      double ft = 0})
+  const Distance({double km = 0,
+    double miles = 0,
+    double yards = 0,
+    double inches = 0,
+    double metres = 0,
+    double ft = 0})
       : this._km(km +
-            (miles / _milesFactor) +
-            (yards / _yardFactor) +
-            (inches / _inchFactor) +
+      (miles / _milesFactor) +
+      (yards / _yardFactor) +
+      (inches / _inchFactor) +
       (metres / 1000) +
-            (ft / _feetFactor));
+      (ft / _feetFactor));
 
   const Distance._km(this._distance);
 
